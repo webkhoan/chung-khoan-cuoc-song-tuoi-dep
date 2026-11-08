@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúng Khoán - Cuộc Sống Tươi Đẹp | Mr. Chúng Khoán (0908 278 993)</title>
+  <meta name="description" content="Chúng Khoán Cuộc Sống Tươi Đẹp - Đồng hành cùng Mr. Chúng Khoán (1987) trên con đường đầu tư an tâm, bền vững và thảnh thơi tài chính. Hotline/Zalo: 0908278993">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              gold: '#F59E0B',
+              goldLight: '#FDE68A',
+              navy: '#0B132B',
+              navyLight: '#1C2541'
+            }
+          },
+          animation: {
+            'float': 'floating 3s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2s infinite',
+          },
+          keyframes: {
+            floating: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.6)' },
+              '50%': { boxShadow: '0 0 35px rgba(245, 158, 11, 0.8)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Gradient text helper */
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FDE68A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-emerald {
+      background: linear-gradient(135deg, #34D399 0%, #10B981 50%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .glass-card-light {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    .glow-gold:hover {
+      box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+    }
+    .glow-emerald:hover {
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-[#080E1E] text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- BACKGROUND DECORATIONS -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-emerald-600/20 rounded-full blur-[128px]"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-amber-500/15 rounded-full blur-[128px]"></div>
+    <div class="absolute bottom-10 left-1/3 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[150px]"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 transition-all duration-300 bg-[#080E1E]/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 via-emerald-400 to-amber-400 p-[2px] transition-transform duration-300 group-hover:scale-105 shadow-lg shadow-emerald-500/20">
+            <div class="w-full h-full bg-[#080E1E] rounded-[14px] flex items-center justify-center">
+              <i class="fa-solid fa-chart-line text-emerald-400 text-xl group-hover:text-amber-400 transition-colors"></i>
+            </div>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-extrabold tracking-tight block font-serif">
+              Mr. Chúng Khoán
+            </span>
+            <span class="text-xs font-semibold tracking-wider uppercase text-amber-400 block -mt-1">
+              Cuộc Sống Tươi Đẹp (1987)
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <a href="#triet-ly" class="hover:text-emerald-400 transition-colors">Triết Lý Đầu Tư</a>
+          <a href="#loi-ich" class="hover:text-emerald-400 transition-colors">Phương Pháp</a>
+          <a href="#cong-cu" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Bảng Tính Lãi Kép
+          </a>
+          <a href="./studio-video.html" class="px-3 py-1.5 rounded-lg bg-amber-500/15 border border-amber-500/40 text-amber-400 hover:bg-amber-500/25 transition-all flex items-center gap-1.5 font-bold">
+            <i class="fa-solid fa-clapperboard"></i> Studio Video AI
+          </a>
+          <a href="#quyen-loi" class="hover:text-emerald-400 transition-colors">Đồng Hành 1:1</a>
+          <a href="#chia-se" class="hover:text-emerald-400 transition-colors">Cảm Nhận</a>
+        </nav>
+
+        <!-- Call to Action Hotline -->
+        <div class="flex items-center gap-3">
+          <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+             class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-300 hover:bg-blue-600/30 transition-all font-semibold text-xs tracking-wide">
+            <i class="fa-solid fa-comment-dots text-blue-400"></i>
+            <span>Zalo: 0908 278 993</span>
+          </a>
+          <a href="tel:0908278993" 
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 via-teal-500 to-amber-500 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 transition-all">
+            <i class="fa-solid fa-phone"></i>
+            <span>Gọi Ngay</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+          <!-- Tagline Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Đồng Hành Đầu Tư Chứng Khoán Chuẩn Mực & Bền Vững</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight sm:leading-none">
+            Đầu Tư Thông Minh <br>
+            <span class="text-gradient-gold font-serif italic">Cho Cuộc Sống</span> <br class="hidden sm:block">
+            <span class="text-gradient-emerald">Thực Sự Tươi Đẹp!</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+            Chứng khoán không phải là canh bảng mệt mỏi hay đánh cược may rủi. Đây là con đường khoa học giúp bạn 
+            <strong class="text-amber-400 font-semibold">bảo vệ tài sản trước lạm phát</strong>, nhân đôi niềm vui cuộc sống và đạt được 
+            <strong class="text-emerald-400 font-semibold">tự do tài chính đích thực</strong> để tận hưởng trọn vẹn từng khoảnh khắc bên gia đình.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+               class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 font-extrabold text-base flex items-center justify-center gap-3 shadow-xl shadow-emerald-500/30 hover:scale-105 hover:from-emerald-400 hover:to-teal-500 transition-all">
+              <i class="fa-solid fa-comment-dollar text-lg"></i>
+              <span>Nhận Tư Vấn 1:1 Miễn Phí (Zalo)</span>
+            </a>
+            <a href="#cong-cu" 
+               class="w-full sm:w-auto px-7 py-4 rounded-xl glass-card hover:bg-white/10 text-white font-semibold text-base flex items-center justify-center gap-2 border border-white/20 transition-all">
+              <i class="fa-solid fa-calculator text-amber-400"></i>
+              <span>Tính Thử Lãi Suất Kép</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Metrics -->
+          <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-white font-serif">100%</div>
+              <div class="text-xs text-slate-400 mt-1">Định hướng giá trị chuẩn</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-serif">Kỷ Luật</div>
+              <div class="text-xs text-slate-400 mt-1">Quản trị rủi ro nghiêm ngặt</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-serif">24/7</div>
+              <div class="text-xs text-slate-400 mt-1">Hỗ trợ Zalo: 0908278993</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Featured Visual / Card -->
+        <div class="lg:col-span-5 relative">
+          <!-- Ambient Glow behind card -->
+          <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 via-amber-500 to-teal-500 rounded-3xl blur-xl opacity-30 animate-pulse-glow"></div>
+          
+          <div class="relative rounded-3xl glass-card p-6 sm:p-8 border border-white/15 shadow-2xl">
+            <!-- Header card -->
+            <div class="flex items-center justify-between pb-6 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-500 to-emerald-500 p-0.5">
+                  <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-base">Mr. Chúng Khoán (1987)</h3>
+                  <p class="text-xs text-emerald-400 font-medium">Cố Vấn Đầu Tư • Chuyên Nghiệp • Tận Tâm</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                ACTIVE
+              </span>
+            </div>
+
+            <!-- Quote in Card -->
+            <div class="py-6 space-y-4">
+              <blockquote class="text-slate-200 text-sm italic font-serif leading-relaxed border-l-2 border-amber-400 pl-4">
+                "Đầu tư thành công không đòi hỏi bạn phải có IQ thiên tài, mà đòi hỏi một tâm thế vững vàng và phương pháp khoa học để không bị cuốn vào vòng xoáy tâm lý đám đông."
+              </blockquote>
+              
+              <div class="bg-slate-950/60 rounded-2xl p-4 border border-white/10 space-y-3">
+                <div class="flex items-center justify-between text-xs text-slate-400">
+                  <span>Mục tiêu cốt lõi:</span>
+                  <span class="text-emerald-400 font-bold">Thảnh thơi & Lợi nhuận bền</span>
+                </div>
+                <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                  <div class="bg-gradient-to-r from-emerald-500 to-amber-400 h-2.5 rounded-full w-[85%]"></div>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-slate-300">Tỷ lệ bảo toàn vốn tối ưu</span>
+                  <span class="text-amber-400 font-semibold">Tăng trưởng dài hạn</span>
+                </div>
+              </div>
+
+              <!-- Contact box in Hero card -->
+              <div class="pt-2">
+                <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+                   class="group w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-center text-sm flex items-center justify-center gap-3 transition-all shadow-lg shadow-amber-500/20">
+                  <i class="fa-solid fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+                  <span>Kết Nối Zalo Trực Tiếp: 0908 278 993</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Mini badges -->
+            <div class="pt-4 border-t border-white/10 flex items-center justify-around text-[12px] text-slate-400">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Miễn phí tư vấn</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Danh mục chọn lọc</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Kèm cặp 1:1</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIẾT LÝ: VÌ SAO GỌI LÀ "CUỘC SỐNG TƯƠI ĐẸP"? -->
+  <section id="triet-ly" class="py-20 relative border-t border-white/10 bg-[#060B17]/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-xs sm:text-sm font-bold tracking-widest text-emerald-400 uppercase">
+          Ý Nghĩa Thực Sự
+        </h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white font-serif">
+          Tại Sao Lại Là <span class="text-gradient-gold">"Chứng Khoán Cuộc Sống Tươi Đẹp"</span>?
+        </p>
+        <p class="text-slate-300 text-sm sm:text-base font-light">
+          Rất nhiều người bước vào thị trường chứng khoán với tâm trạng lo âu, ăn không ngon, ngủ không yên vì bị bảng điện chi phối. 
+          Chúng tôi mang đến góc nhìn hoàn toàn mới: <strong>Đầu tư là để giải phóng, không phải để trói buộc!</strong>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="glass-card rounded-2xl p-8 border border-white/10 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2 group">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+            1. Sở Hữu Doanh Nghiệp Tốt
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Thay vì lướt sóng T+ trong bất an, bạn nắm giữ cổ phần của các công ty đầu ngành có doanh thu vững chắc, cổ tức đều đặn và tiềm năng mở rộng phi mã. Tiền của bạn làm việc chăm chỉ ngày đêm cho bạn.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-2xl p-8 border border-white/10 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-2 group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
+            2. An Tâm Kê Cao Gối Ngủ
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Với hệ thống quản trị rủi ro đa lớp và nguyên tắc cắt lỗ dứt khoát, bạn không bao giờ rơi vào cảnh "cháy tài khoản" hay kẹp hàng năm này qua tháng nọ. Tâm lý vững vàng tạo nên phong thái an nhiên.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-2xl p-8 border border-white/10 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+          <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">
+            3. Dành Thời Gian Cho Gia Đình
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Mục đích tối thượng của sự giàu có là mang lại tự do, sức khỏe và thời gian bên những người thân yêu. Khi dòng tiền sinh lời đều đặn, cuộc sống của bạn sẽ ngập tràn hạnh phúc và trọn vẹn ý nghĩa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TOOL: BẢNG TÍNH LÃI SUẤT KÉP (COMPOUND INTEREST CALCULATOR) -->
+  <section id="cong-cu" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <span class="inline-block px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
+          Công Cụ Tương Tác Trực Tuyến
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-serif">
+          Khám Phá Sức Mạnh Kỳ Diệu Của <span class="text-gradient-gold">Lãi Suất Kép</span>
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base font-light">
+          Albert Einstein từng gọi lãi suất kép là <em>"kỳ quan thứ 8 của thế giới"</em>. Hãy thử kéo thanh trượt bên dưới để xem số vốn nhỏ của bạn sẽ biến hóa như thế nào sau vài năm đầu tư kỷ luật!
+        </p>
+      </div>
+
+      <!-- Calculator Box -->
+      <div class="max-w-4xl mx-auto rounded-3xl glass-card p-6 sm:p-10 border border-white/20 shadow-2xl relative overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Controls (Left) -->
+          <div class="md:col-span-7 space-y-6">
+            <!-- Vốn ban đầu -->
+            <div>
+              <div class="flex justify-between items-center text-sm font-semibold mb-2">
+                <span class="text-slate-300">Số vốn khởi điểm:</span>
+                <span id="initialCapitalDisplay" class="text-emerald-400 text-base font-bold font-mono">50,000,000 VNĐ</span>
+              </div>
+              <input type="range" id="initialCapital" min="5000000" max="500000000" step="5000000" value="50000000" 
+                     class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                <span>5 Triệu</span>
+                <span>250 Triệu</span>
+                <span>500 Triệu</span>
+              </div>
+            </div>
+
+            <!-- Tích lũy mỗi tháng -->
+            <div>
+              <div class="flex justify-between items-center text-sm font-semibold mb-2">
+                <span class="text-slate-300">Tích lũy định kỳ hàng tháng:</span>
+                <span id="monthlyContributionDisplay" class="text-amber-400 text-base font-bold font-mono">5,000,000 VNĐ</span>
+              </div>
+              <input type="range" id="monthlyContribution" min="0" max="30000000" step="1000000" value="5000000" 
+                     class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-amber-500">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                <span>0đ</span>
+                <span>15 Triệu</span>
+                <span>30 Triệu</span>
+              </div>
+            </div>
+
+            <!-- Lợi nhuận kỳ vọng / năm -->
+            <div>
+              <div class="flex justify-between items-center text-sm font-semibold mb-2">
+                <span class="text-slate-300">Tỷ suất sinh lời kỳ vọng hàng năm:</span>
+                <span id="annualRateDisplay" class="text-teal-400 text-base font-bold font-mono">18% / năm</span>
+              </div>
+              <input type="range" id="annualRate" min="8" max="35" step="1" value="18" 
+                     class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-teal-400">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                <span>8% (Gửi tiết kiệm)</span>
+                <span>18% (CK chuẩn mực)</span>
+                <span>35% (Xuất sắc)</span>
+              </div>
+            </div>
+
+            <!-- Thời gian đầu tư -->
+            <div>
+              <div class="flex justify-between items-center text-sm font-semibold mb-2">
+                <span class="text-slate-300">Thời gian đồng hành:</span>
+                <span id="investmentYearsDisplay" class="text-white text-base font-bold font-mono">10 Năm</span>
+              </div>
+              <input type="range" id="investmentYears" min="1" max="25" step="1" value="10" 
+                     class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                <span>1 Năm</span>
+                <span>10 Năm</span>
+                <span>25 Năm</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Result Card (Right) -->
+          <div class="md:col-span-5 bg-gradient-to-br from-slate-900 to-slate-950 p-6 sm:p-8 rounded-2xl border border-white/10 text-center space-y-6 shadow-xl relative">
+            <div class="space-y-1">
+              <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Tổng Tài Sản Dự Kiến</span>
+              <div id="finalTotalDisplay" class="text-3xl sm:text-4xl font-extrabold text-gradient-gold font-mono tracking-tight">
+                1,753,890,000 VNĐ
+              </div>
+              <p class="text-xs text-emerald-400 font-medium">Sau <span id="yearsSummary">10</span> năm đầu tư kiên định</p>
+            </div>
+
+            <div class="space-y-3 pt-4 border-t border-white/10 text-xs">
+              <div class="flex justify-between items-center text-slate-400">
+                <span>Tổng vốn bạn đã bỏ ra:</span>
+                <span id="totalPrincipalDisplay" class="text-white font-semibold font-mono">650,000,000 VNĐ</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-400">
+                <span>Tiền lời sinh ra từ Lãi Kép:</span>
+                <span id="totalInterestDisplay" class="text-emerald-400 font-bold font-mono">+1,103,890,000 VNĐ</span>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer"
+                 class="w-full block py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 transition-all">
+                Lập Kế Hoạch Cá Nhân 1:1 Với Chuyên Viên
+              </a>
+              <p class="text-[11px] text-slate-500 mt-2">Miễn phí tư vấn chiến lược qua Zalo: <strong>0908 278 993</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 NGUYÊN TẮC VÀNG BẢO VỆ VỐN VÀ TĂNG TRƯỞNG -->
+  <section id="loi-ich" class="py-20 bg-[#060B17]/60 border-t border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-xs sm:text-sm font-bold tracking-widest text-emerald-400 uppercase">
+          Phương Pháp Thực Chiến
+        </h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white font-serif">
+          4 Nguyên Tắc Vàng Giữ Tiền & Nhân Tài Sản
+        </p>
+        <p class="text-slate-300 text-sm sm:text-base font-light">
+          Thành công bền vững không đến từ may mắn. Nó đến từ việc tuân thủ một công thức kỷ luật đã được kiểm chứng qua nhiều chu kỳ thị trường.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Principle 1 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-emerald-500/40 transition-all">
+          <div class="text-4xl font-black text-white/10 absolute top-4 right-4 font-mono group-hover:text-emerald-500/20 transition-colors">01</div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-5">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Chọn Doanh Nghiệp Kim Cương</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Chỉ giải ngân vào doanh nghiệp có "hào kinh tế" sâu rộng, ban lãnh đạo liêm chính, tài chính sạch và triển vọng tăng trưởng vượt trội.
+          </p>
+        </div>
+
+        <!-- Principle 2 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-amber-500/40 transition-all">
+          <div class="text-4xl font-black text-white/10 absolute top-4 right-4 font-mono group-hover:text-amber-500/20 transition-colors">02</div>
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-5">
+            <i class="fa-solid fa-stopwatch-20"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Đúng Thời Điểm (Timing)</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Kết hợp phân tích kỹ thuật và dòng tiền tạo lập để mua khi cổ phiếu tích lũy chặt chẽ và bán khi đạt kỳ vọng hoặc xuất hiện rủi ro đảo chiều.
+          </p>
+        </div>
+
+        <!-- Principle 3 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-blue-500/40 transition-all">
+          <div class="text-4xl font-black text-white/10 absolute top-4 right-4 font-mono group-hover:text-blue-500/20 transition-colors">03</div>
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 text-xl mb-5">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Phân Bổ Vốn Đa Tầng</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Không "bỏ tất cả trứng vào một giỏ" nhưng cũng không dàn trải 20-30 mã. Danh mục vàng lý tưởng 3-5 mã siêu cổ phiếu mang lại hiệu quả cao nhất.
+          </p>
+        </div>
+
+        <!-- Principle 4 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 relative overflow-hidden group hover:border-rose-500/40 transition-all">
+          <div class="text-4xl font-black text-white/10 absolute top-4 right-4 font-mono group-hover:text-rose-500/20 transition-colors">04</div>
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 flex items-center justify-center text-rose-400 text-xl mb-5">
+            <i class="fa-solid fa-peace"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Quản Trị Tâm Lý Tuyệt Đối</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Loại bỏ lòng tham (FOMO) khi thị trường hưng phấn quá đà và nỗi sợ hãi (Panic Sell) khi thị trường chiết khấu sâu. Tâm bất biến giữa dòng đời vạn biến.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUYỀN LỢI ĐẶC QUYỀN KHI ĐỒNG HÀNH -->
+  <section id="quyen-loi" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left text -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+            <i class="fa-solid fa-crown text-amber-400"></i> Dịch Vụ Cố Vấn Tận Tâm
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-serif leading-tight">
+            Khi Đồng Hành Cùng <br>
+            <span class="text-gradient-gold">Chứng Khoán Cuộc Sống Tươi Đẹp</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+            Bạn không chỉ có một người tư vấn cổ phiếu, mà có một <strong>người bạn tri kỷ tài chính</strong> luôn kề vai sát cánh, giúp bạn bảo vệ từng đồng vốn mồ hôi nước mắt và phát triển tài sản vững chắc nhất.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Khuyến Nghị Mua/Bán Rõ Ràng & Kèm Điểm Stoploss</h4>
+                <p class="text-xs text-slate-400 mt-1">Không phím hàng vu vơ. Mỗi khuyến nghị đều có báo cáo luận điểm phân tích và mức giá giải ngân - chốt lời chuẩn xác.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Tái Cơ Cấu Danh Mục Tài Khoản Bị Kẹp Vốn (1:1)</h4>
+                <p class="text-xs text-slate-400 mt-1">Hỗ trợ rà soát, cơ cấu loại bỏ các mã cổ phiếu yếu kém, tái đầu tư vào cổ phiếu đón sóng ngành mới.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">Hỗ Trợ Mở Tài Khoản Số Đẹp & Phí Ưu Đãi Tối Đa</h4>
+                <p class="text-xs text-slate-400 mt-1">Được hưởng nền tảng giao dịch công nghệ cao, nạp rút tiền tức thì 24/7, margin linh hoạt và hệ sinh thái tài chính đỉnh cao.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4 items-center">
+            <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+               class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-amber-500 text-slate-950 font-extrabold text-sm flex items-center gap-2 shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Nhắn Zalo Ngay (0908 278 993)</span>
+            </a>
+            <a href="tel:0908278993" 
+               class="px-6 py-3.5 rounded-xl glass-card text-white hover:bg-white/10 font-bold text-sm flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-phone text-emerald-400"></i>
+              <span>Gọi Trực Tiếp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right card: Quick Registration Form -->
+        <div class="lg:col-span-6">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/20 shadow-2xl relative">
+            <div class="text-center mb-6">
+              <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Đăng Ký Đồng Hành</span>
+              <h3 class="text-2xl font-bold text-white mt-1">Nhận Báo Cáo Chiến Lược Đầu Tư</h3>
+              <p class="text-xs text-slate-400 mt-1">Chuyên gia sẽ liên hệ qua Zalo trong vòng 15 phút</p>
+            </div>
+
+            <form id="contactForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Họ và tên của bạn:</label>
+                <input type="text" id="custName" required placeholder="Ví dụ: Nguyễn Văn An" 
+                       class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 text-sm">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Số điện thoại / Zalo nhận tài liệu:</label>
+                <input type="tel" id="custPhone" required placeholder="Ví dụ: 0908 123 456" 
+                       class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 text-sm">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Quy mô vốn hoặc mục tiêu mong muốn:</label>
+                <select id="custCapital" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/15 text-white focus:outline-none focus:border-emerald-400 text-sm">
+                  <option value="duoi-100tr">Dưới 100 Triệu (Bắt đầu tìm hiểu / Tích sản)</option>
+                  <option value="100tr-500tr">100 Triệu - 500 Triệu (Tăng trưởng tài sản)</option>
+                  <option value="500tr-2ty">500 Triệu - 2 Tỷ (Đầu tư chuyên nghiệp)</option>
+                  <option value="tren-2ty">Trên 2 Tỷ (Quản lý gia sản & Danh mục VIP)</option>
+                  <option value="co-cau">Cần cơ cấu lại tài khoản đang lỗ</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Lời nhắn thêm (nếu có):</label>
+                <textarea id="custNote" rows="2" placeholder="Ví dụ: Mình là người mới / Mình đang kẹp mã HPG..." 
+                          class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 text-sm"></textarea>
+              </div>
+
+              <button type="submit" 
+                      class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-amber-500 hover:from-emerald-400 hover:to-amber-400 text-slate-950 font-black text-base shadow-lg shadow-emerald-500/30 transition-all cursor-pointer">
+                <i class="fa-solid fa-paper-plane mr-2"></i> Gửi Yêu Cầu Tư Vấn Ngay
+              </button>
+
+              <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-center text-xs space-y-1">
+                <p class="font-bold text-sm">✓ Tiếp nhận thành công!</p>
+                <p>Chúng tôi sẽ kết nối Zalo với bạn sớm nhất. Hoặc bấm gọi hotline để được hỗ trợ tức thì.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CẢM NHẬN NHÀ ĐẦU TƯ (TESTIMONIALS) -->
+  <section id="chia-se" class="py-20 bg-[#060B17]/60 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-xs sm:text-sm font-bold tracking-widest text-emerald-400 uppercase">
+          Khách Hàng Nói Gì
+        </h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white font-serif">
+          Hạnh Phúc Khi Đầu Tư Đúng Cách
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic">
+              "Trước đây tôi lướt sóng cả ngày đau đầu, vừa mất việc cơ quan vừa thua lỗ. Từ ngày đồng hành cùng đội ngũ Chứng Khoán Cuộc Sống Tươi Đẹp, tôi chuyển sang nắm giữ các mã tăng trưởng chất lượng. Tài khoản tăng đều 25%/năm mà tối về ngủ rất ngon!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/30 text-emerald-300 flex items-center justify-center font-bold">
+              TH
+            </div>
+            <div>
+              <div class="font-bold text-white text-sm">Anh Trần Hoàng</div>
+              <div class="text-xs text-slate-400">Chủ doanh nghiệp xây dựng, TP.HCM</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic">
+              "Tư vấn cực kỳ chân thành và trách nhiệm qua Zalo 0908278993. Mỗi khi thị trường biến động mạnh, cố vấn luôn gửi bản tin phân tích trấn an tâm lý kịp thời, giúp mình không bị bán tháo ngay đáy. Thật sự biết ơn!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-amber-500/30 text-amber-300 flex items-center justify-center font-bold">
+              ML
+            </div>
+            <div>
+              <div class="font-bold text-white text-sm">Chị Mai Lan</div>
+              <div class="text-xs text-slate-400">Bác sĩ chuyên khoa, Hà Nội</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm italic">
+              "Phương pháp kỷ luật đã cứu tài khoản của mình. Không còn cảnh mua đỉnh bán đáy. Kế hoạch tài chính dài hạn giờ đây đã rõ ràng từng bước một, đúng với tinh thần cuộc sống tươi đẹp."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-teal-500/30 text-teal-300 flex items-center justify-center font-bold">
+              ĐV
+            </div>
+            <div>
+              <div class="font-bold text-white text-sm">Anh Đoàn Vũ</div>
+              <div class="text-xs text-slate-400">Kỹ sư phần mềm, Đà Nẵng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER: LIÊN HỆ NGAY -->
+  <section class="py-16 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-r from-emerald-900/60 via-slate-900 to-amber-950/60 border border-emerald-500/40 p-8 sm:p-12 text-center relative shadow-2xl">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white font-serif mb-4">
+          Bắt Đầu Hành Trình Đầu Tư Thảnh Thơi Ngay Hôm Nay
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-light">
+          Đừng để biến động bảng điện lấy đi thời gian quý báu bên gia đình. Hãy để chuyên môn và sự tận tâm của chúng tôi đồng hành bảo vệ và gia tăng tài sản cho bạn.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+             class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold text-base flex items-center justify-center gap-3 shadow-lg shadow-blue-500/30 transition-all">
+            <i class="fa-solid fa-comments text-xl"></i>
+            <span>Kết Nối Zalo: 0908 278 993</span>
+          </a>
+          <a href="tel:0908278993" 
+             class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base flex items-center justify-center gap-3 shadow-lg shadow-amber-500/30 transition-all">
+            <i class="fa-solid fa-phone-volume text-xl"></i>
+            <span>Hotline: 0908 278 993</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#040812] py-12 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <span class="text-base font-bold text-white font-serif">Chúng Khoán - Cuộc Sống Tươi Đẹp</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            Kênh tư vấn chiến lược đầu tư độc lập cùng <strong>Mr. Chúng Khoán (1987)</strong>, lấy giá trị nội tại và kỷ luật quản trị rủi ro làm kim chỉ nam.
+          </p>
+        </div>
+
+        <div class="md:col-span-4 space-y-2">
+          <h4 class="font-bold text-white text-sm">Thông Tin Liên Hệ</h4>
+          <p class="flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-phone text-emerald-400"></i> Hotline/Zalo: <a href="tel:0908278993" class="hover:text-amber-400 font-bold">0908 278 993</a>
+          </p>
+          <p class="flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-comment text-blue-400"></i> Nhắn tin Zalo: <a href="https://zalo.me/0908278993" target="_blank" class="hover:underline text-blue-400 font-semibold">zalo.me/0908278993</a>
+          </p>
+          <p class="flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-clock text-amber-400"></i> Thời gian tư vấn: 24/7 kể cả ngày nghỉ và lễ
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="font-bold text-white text-sm">Lưu Ý Pháp Lý</h4>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Mọi nhận định, tài liệu phân tích chỉ mang tính chất tham khảo. Nhà đầu tư chịu trách nhiệm với quyết định tài chính của mình. Chúc quý nhà đầu tư gặt hái nhiều thắng lợi!
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 gap-4">
+        <div>
+          © 2026 Chúng Khoán Cuộc Sống Tươi Đẹp. Bản quyền thuộc về Mr. Chúng Khoán (1987) - Hotline/Zalo: 0908 278 993.
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-emerald-400 transition-colors">Điều Khoản</a>
+          <a href="#" class="hover:text-emerald-400 transition-colors">Bảo Mật</a>
+          <a href="https://zalo.me/0908278993" class="hover:text-emerald-400 transition-colors">Liên Hệ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK CONTACT BUTTONS (STICKY) -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
+    <!-- Quick Zalo Button -->
+    <a href="https://zalo.me/0908278993" target="_blank" rel="noopener noreferrer" 
+       class="flex items-center gap-2 px-4 py-3 rounded-full bg-blue-600 text-white font-bold text-sm shadow-2xl hover:scale-110 transition-transform hover:bg-blue-500 border border-white/20 animate-bounce">
+      <i class="fa-solid fa-comments text-lg"></i>
+      <span class="hidden sm:inline">Chat Zalo: 0908 278 993</span>
+      <span class="sm:hidden">Zalo</span>
+    </a>
+
+    <!-- Quick Call Button -->
+    <a href="tel:0908278993" 
+       class="w-12 h-12 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-slate-950 font-bold flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-transform hover:shadow-emerald-500/50">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC: COMPOUND INTEREST CALCULATOR & FORM -->
+  <script>
+    // Format Vietnamese Currency
+    function formatVND(amount) {
+      return new Intl.NumberFormat('vi-VN').format(Math.round(amount)) + ' VNĐ';
+    }
+
+    // Compound Interest Calculation
+    function calculateCompoundInterest() {
+      const initial = parseFloat(document.getElementById('initialCapital').value) || 0;
+      const monthly = parseFloat(document.getElementById('monthlyContribution').value) || 0;
+      const annualRate = (parseFloat(document.getElementById('annualRate').value) || 0) / 100;
+      const years = parseInt(document.getElementById('investmentYears').value) || 1;
+
+      // Update UI slider values
+      document.getElementById('initialCapitalDisplay').innerText = formatVND(initial);
+      document.getElementById('monthlyContributionDisplay').innerText = formatVND(monthly);
+      document.getElementById('annualRateDisplay').innerText = Math.round(annualRate * 100) + '% / năm';
+      document.getElementById('investmentYearsDisplay').innerText = years + ' Năm';
+      document.getElementById('yearsSummary').innerText = years;
+
+      // Formula: Compound interest with monthly contributions
+      const monthlyRate = annualRate / 12;
+      const totalMonths = years * 12;
+
+      // Future value of initial capital: P * (1 + r)^n
+      const fvInitial = initial * Math.pow(1 + monthlyRate, totalMonths);
+
+      // Future value of a series of monthly deposits: PMT * [((1 + r)^n - 1) / r]
+      let fvMonthly = 0;
+      if (monthlyRate > 0) {
+        fvMonthly = monthly * ((Math.pow(1 + monthlyRate, totalMonths) - 1) / monthlyRate);
+      } else {
+        fvMonthly = monthly * totalMonths;
+      }
+
+      const totalFV = fvInitial + fvMonthly;
+      const totalPrincipal = initial + (monthly * totalMonths);
+      const totalInterest = totalFV - totalPrincipal;
+
+      // Update UI outputs
+      document.getElementById('finalTotalDisplay').innerText = formatVND(totalFV);
+      document.getElementById('totalPrincipalDisplay').innerText = formatVND(totalPrincipal);
+      document.getElementById('totalInterestDisplay').innerText = '+' + formatVND(totalInterest);
+    }
+
+    // Attach listeners
+    ['initialCapital', 'monthlyContribution', 'annualRate', 'investmentYears'].forEach(id => {
+      document.getElementById(id).addEventListener('input', calculateCompoundInterest);
+    });
+
+    // Run on startup
+    calculateCompoundInterest();
+
+    // Form submission handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const capital = document.getElementById('custCapital').value;
+      const note = document.getElementById('custNote').value.trim();
+
+      const successBox = document.getElementById('formSuccessMessage');
+      successBox.classList.remove('hidden');
+
+      // Open Zalo prefilled message after 1.5s
+      setTimeout(() => {
+        const msg = encodeURIComponent(`Chào chuyên viên Chứng Khoán Cuộc Sống Tươi Đẹp, tôi là ${name} (SĐT: ${phone}). Vốn mong muốn: ${capital}. Nội dung: ${note}`);
+        window.open(`https://zalo.me/0908278993?text=${msg}`, '_blank');
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
